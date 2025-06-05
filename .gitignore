@@ -1,3 +1,5 @@
 .idea
+.venv
 *.joblib
 */notebook.html
+*/.ipynb_checkpoints
