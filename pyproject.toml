@@ -2,18 +2,20 @@
 name = "basics-of-machine-learning"
 version = "1.0.0"
 description = ""
-authors = [{ name = "Jakub Adamczyk (j-adamczyk)", email = "jadamczy@agh.edu.pl" }]
+authors = [{name = "Jakub Adamczyk (j-adamczyk)", email = "jadamczy@agh.edu.pl"}]
 readme = "README.md"
 
 requires-python = "==3.11.*"
 
 dependencies = [
+    "fast-langdetect",
     "feature-engine",
     "imbalanced-learn",
     "jupyter",
     "matplotlib",
     "pandas==2.*",
     "pillow",
+    "plotly",
     "pyarrow",
     "pynndescent",
     "pyod",
@@ -24,6 +26,7 @@ dependencies = [
     "torch",
     "tqdm",
     "xgboost",
+    "umap-learn",
 ]
 
 [dependency-groups]
@@ -42,6 +45,6 @@ explicit = true
 
 [tool.ruff.lint]
 ignore = [
-    "E731", # lambda expressions
+    "E731",  # lambda expressions
 ]
 exclude = ["**notebook.ipynb"]
